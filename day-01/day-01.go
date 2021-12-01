@@ -7,15 +7,11 @@ import (
 	"strconv"
 )
 
-func check(e error) {
-	if e != nil {
-		panic(e)
-	}
-}
-
 func toInt(s string) int {
 	result, err := strconv.Atoi(s)
-	check(err)
+	if err != nil {
+		panic(err)
+	}
 	return result
 }
 
@@ -42,7 +38,7 @@ func solveSecondPart(records []int) int {
 func main() {
 	file, err := os.Open("input.txt")
 	if err != nil {
-		check(err)
+		panic(err)
 	}
 	defer file.Close()
 
@@ -55,7 +51,7 @@ func main() {
 	}
 
 	if err := scanner.Err(); err != nil {
-		check(err)
+		panic(err)
 	}
 
 	fmt.Printf("Part 1: %d\n", solveFirstPart(records))
