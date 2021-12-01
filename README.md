@@ -1,2 +1,2 @@
-# advent-of-code
-My solutions to the Advent of Code 2021 in Go
+# Advent of Code 🎄
+My solutions to the [Advent of Code](http://adventofcode.com/) 2021 in Go
