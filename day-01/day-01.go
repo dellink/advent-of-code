@@ -26,7 +26,7 @@ func solve(records []int, index int) int {
 }
 
 func main() {
-	file, err := os.Open("input.txt")
+	file, err := os.Open("day-01/input.txt")
 	if err != nil {
 		panic(err)
 	}
