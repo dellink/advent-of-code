@@ -15,20 +15,10 @@ func toInt(s string) int {
 	return result
 }
 
-func solveFirstPart(records []int) int {
+func solve(records []int, index int) int {
 	counter := 0
-	for i := 1; i < len(records); i++ {
-		if records[i] > records[i-1] {
-			counter += 1
-		}
-	}
-	return counter
-}
-
-func solveSecondPart(records []int) int {
-	counter := 0
-	for i := 3; i < len(records); i++ {
-		if records[i] > records[i-3] {
+	for i := index; i < len(records); i++ {
+		if records[i] > records[i-index] {
 			counter += 1
 		}
 	}
@@ -54,6 +44,6 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Printf("Part 1: %d\n", solveFirstPart(records))
-	fmt.Printf("Part 2: %d\n", solveSecondPart(records))
+	fmt.Printf("Part 1: %d\n", solve(records, 1))
+	fmt.Printf("Part 2: %d\n", solve(records, 3))
 }
