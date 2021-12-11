@@ -11,4 +11,5 @@ My solutions to the [Advent of Code](http://adventofcode.com/) 2021 in Go
 [Day 7: The Treachery of Whales](https://github.com/dellink/advent-of-code/tree/main/day-07)\
 [Day 8: Seven Segment Search](https://github.com/dellink/advent-of-code/tree/main/day-08)\
 [Day 9: Smoke Basin](https://github.com/dellink/advent-of-code/tree/main/day-09)\
-[Day 10: Syntax Scoring](https://github.com/dellink/advent-of-code/tree/main/day-10)
+[Day 10: Syntax Scoring](https://github.com/dellink/advent-of-code/tree/main/day-10)\
+[Day 11: Dumbo Octopus](https://github.com/dellink/advent-of-code/tree/main/day-11)
