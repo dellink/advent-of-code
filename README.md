@@ -14,4 +14,5 @@ My solutions to the [Advent of Code](http://adventofcode.com/) 2021 in Go
 [Day 10: Syntax Scoring](https://github.com/dellink/advent-of-code/tree/main/day-10)\
 [Day 11: Dumbo Octopus](https://github.com/dellink/advent-of-code/tree/main/day-11)\
 [Day 12: Passage Pathing](https://github.com/dellink/advent-of-code/tree/main/day-12)\
-[Day 13: Transparent Origami](https://github.com/dellink/advent-of-code/tree/main/day-13)
+[Day 13: Transparent Origami](https://github.com/dellink/advent-of-code/tree/main/day-13)\
+[Day 14: Extended Polymerization](https://github.com/dellink/advent-of-code/tree/main/day-14)
