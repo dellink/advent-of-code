@@ -16,4 +16,5 @@ My solutions to the [Advent of Code](http://adventofcode.com/) 2021 in Go
 [Day 12: Passage Pathing](https://github.com/dellink/advent-of-code/tree/main/day-12)\
 [Day 13: Transparent Origami](https://github.com/dellink/advent-of-code/tree/main/day-13)\
 [Day 14: Extended Polymerization](https://github.com/dellink/advent-of-code/tree/main/day-14)\
-[Day 15: Chiton](https://github.com/dellink/advent-of-code/tree/main/day-15)
+[Day 15: Chiton](https://github.com/dellink/advent-of-code/tree/main/day-15)\
+[Day 16: Packet Decoder](https://github.com/dellink/advent-of-code/tree/main/day-16)
