@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"sort"
 	"strconv"
 	"strings"
 )
@@ -13,45 +14,54 @@ func main() {
 	size := len(numbers)
 	numbers = generate(numbers)
 
-	full := [][]int{}
+	visited := [][]bool{}
 
 	for i := range numbers {
-		full = append(full, append([]int{}, numbers[i]...))
-	}
-
-	for i := range full {
-		for j := range full[i] {
-			full[i][j] = 0
+		line := []bool{}
+		for range numbers[i] {
+			line = append(line, false)
 		}
+		visited = append(visited, line)
 	}
 
-	full[0][0] = numbers[0][0]
+	queue := append([][2][2]int{}, [2][2]int{{0, 0}, {0}})
 
-	for i := range numbers {
-		for j := range numbers[i] {
-			if j < len(numbers[i])-1 {
-				if full[i][j+1] > 0 {
-					if full[i][j+1] > full[i][j]+numbers[i][j+1] {
-						full[i][j+1] = full[i][j] + numbers[i][j+1]
-					}
-				} else {
-					full[i][j+1] = full[i][j] + numbers[i][j+1]
-				}
-			}
-			if i < len(numbers[i])-1 {
-				if full[i+1][j] > 0 {
-					if full[i+1][j] > full[i][j]+numbers[i+1][j] {
-						full[i+1][j] = full[i][j] + numbers[i+1][j]
-					}
-				} else {
-					full[i+1][j] = full[i][j] + numbers[i+1][j]
-				}
-			}
+	directions := [][]int{
+		{-1, 0},
+		{0, 1},
+		{1, 0},
+		{0, -1},
+	}
+
+	for len(queue) > 0 {
+		point := queue[0]
+		queue = queue[1:]
+
+		if point[0][0] == size-1 && point[0][1] == size-1 {
+			fmt.Printf("Part 1: %d\n", point[1][0])
 		}
-	}
 
-	fmt.Printf("Part 1: %d\n", full[size-1][size-1]-full[0][0])
-	fmt.Printf("Part 2: %d\n", full[len(full)-1][len(full[0])-1]-full[0][0])
+		if point[0][0] == len(numbers)-1 && point[0][1] == len(numbers)-1 {
+			fmt.Printf("Part 2: %d\n", point[1][0])
+			break
+		}
+
+		for _, direction := range directions {
+			ii := point[0][0] + direction[0]
+			jj := point[0][1] + direction[1]
+
+			if ii < 0 || jj < 0 || len(numbers)-1 < ii || len(numbers)-1 < jj || visited[ii][jj] {
+				continue
+			}
+
+			visited[ii][jj] = true
+			queue = append(queue, [2][2]int{{ii, jj}, {point[1][0] + numbers[ii][jj]}})
+		}
+
+		sort.Slice(queue, func(i, j int) bool {
+			return queue[i][1][0] < queue[j][1][0]
+		})
+	}
 }
 
 func read() [][]int {
