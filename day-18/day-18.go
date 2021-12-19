@@ -13,7 +13,7 @@ type Snail struct {
 }
 
 func main() {
-	numbers := read("day-18/input.txt")
+	numbers := read()
 
 	number := append([]Snail{}, numbers[0]...)
 	for i := 1; i < len(numbers); i++ {
@@ -36,8 +36,8 @@ func main() {
 	fmt.Printf("Part 2: %d\n", max)
 }
 
-func read(filename string) [][]Snail {
-	file, _ := os.Open(filename)
+func read() [][]Snail {
+	file, _ := os.Open("day-18/input.txt")
 	scanner := bufio.NewScanner(file)
 	numbers := [][]Snail{}
 
