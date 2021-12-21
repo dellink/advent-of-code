@@ -21,4 +21,5 @@ My solutions to the [Advent of Code](http://adventofcode.com/) 2021 in Go
 [Day 17: Trick Shot](https://github.com/dellink/advent-of-code/tree/main/day-17)\
 [Day 18: Snailfish](https://github.com/dellink/advent-of-code/tree/main/day-18)\
 [Day 19: Beacon Scanner](https://github.com/dellink/advent-of-code/tree/main/day-19)\
-[Day 20: Trench Map](https://github.com/dellink/advent-of-code/tree/main/day-20)
+[Day 20: Trench Map](https://github.com/dellink/advent-of-code/tree/main/day-20)\
+[Day 21: Dirac Dice](https://github.com/dellink/advent-of-code/tree/main/day-21)
