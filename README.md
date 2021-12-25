@@ -24,4 +24,5 @@ My solutions to the [Advent of Code](http://adventofcode.com/) 2021 in Go
 [Day 20: Trench Map](https://github.com/dellink/advent-of-code/tree/main/day-20)\
 [Day 21: Dirac Dice](https://github.com/dellink/advent-of-code/tree/main/day-21)\
 [Day 22: Reactor Reboot](https://github.com/dellink/advent-of-code/tree/main/day-22)\
-[Day 23: Amphipod](https://github.com/dellink/advent-of-code/tree/main/day-23)
+[Day 23: Amphipod](https://github.com/dellink/advent-of-code/tree/main/day-23)\
+[Day 24: Arithmetic Logic Unit](https://github.com/dellink/advent-of-code/tree/main/day-24)
