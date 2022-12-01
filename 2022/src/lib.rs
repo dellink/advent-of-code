@@ -1,8 +1,8 @@
 use std::{env, fs};
 
-pub fn read_file_input(day: u8) -> String {
+pub fn read_file_input(file: String) -> String {
     let cwd = env::current_dir().unwrap();
-    let filepath = cwd.join("src/inputs").join(format!("{:02}.txt", day));
+    let filepath = cwd.join("src/inputs").join(file);
 
     fs::read_to_string(filepath).unwrap()
 }
