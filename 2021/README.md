@@ -1,6 +1,6 @@
 # Advent of Code 2021 🎄
 
-My solutions to the [Advent of Code](http://adventofcode.com/) 2021 in Go
+My solutions to the [Advent of Code](https://adventofcode.com/2021/) 2021 in Go
 
 <img src="https://github.com/dellink/advent-of-code/blob/main/2021/img.png" alt="Advent of Code 2021"/>
 
