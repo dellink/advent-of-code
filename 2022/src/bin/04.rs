@@ -22,13 +22,7 @@ fn main() {
             score1 += 1;
         }
 
-        if section1[0] >= section2[0] && section1[0] <= section2[1] {
-            score2 += 1;
-        } else if section1[1] >= section2[0] && section1[1] <= section2[1] {
-            score2 += 1;
-        } else if section2[0] >= section1[0] && section2[0] <= section1[1] {
-            score2 += 1;
-        } else if section2[1] >= section1[0] && section2[1] <= section1[1] {
+        if section1[1] >= section2[0] && section1[0] <= section2[1] {
             score2 += 1;
         }
     }
