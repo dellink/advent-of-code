@@ -6,7 +6,7 @@ fn main() {
     let mut current = 0;
     let mut max: (i32, i32, i32) = (0, 0, 0);
 
-    for (_i, line) in input.lines().enumerate() {
+    for line in input.lines() {
         if line.is_empty() {
             max = calculate(current, max);
             current = 0;

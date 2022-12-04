@@ -5,7 +5,7 @@ fn main() {
     let mut score1 = 0;
     let mut score2 = 0;
 
-    for (_i, line) in input.lines().enumerate() {
+    for line in input.lines() {
         let columns: Vec<&str> = line.split(' ').collect();
         if columns[1] == "X" {
             score1 += 1;
