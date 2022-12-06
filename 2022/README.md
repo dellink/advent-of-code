@@ -6,4 +6,5 @@ My solutions to the [Advent of Code](https://adventofcode.com/2022/) 2022 in Rus
 [Day 2: Rock Paper Scissors](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/02.rs)\
 [Day 3: Rucksack Reorganization](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/03.rs)\
 [Day 4: Camp Cleanup](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/04.rs)\
-[Day 5: Supply Stacks](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/05.rs)
+[Day 5: Supply Stacks](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/05.rs)\
+[Day 6: Tuning Trouble](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/06.rs)
