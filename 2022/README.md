@@ -9,4 +9,5 @@ My solutions to the [Advent of Code](https://adventofcode.com/2022/) 2022 in Rus
 [Day 5: Supply Stacks](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/05.rs)\
 [Day 6: Tuning Trouble](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/06.rs)\
 [Day 7: No Space Left On Device](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/07.rs)\
-[Day 8: Treetop Tree House](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/08.rs)
+[Day 8: Treetop Tree House](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/08.rs)\
+[Day 9: Rope Bridge](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/09.rs)
