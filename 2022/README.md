@@ -12,4 +12,5 @@ My solutions to the [Advent of Code](https://adventofcode.com/2022/) 2022 in Rus
 [Day 8: Treetop Tree House](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/08.rs)\
 [Day 9: Rope Bridge](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/09.rs)\
 [Day 10: Cathode-Ray Tube](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/10.rs)\
-[Day 11: Monkey in the Middle](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/11.rs)
+[Day 11: Monkey in the Middle](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/11.rs)\
+[Day 12: Hill Climbing Algorithm](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/12.rs)
