@@ -1,3 +1,4 @@
+use itertools::Itertools;
 use std::collections::{HashMap, HashSet};
 
 use aoc::read_file_input;
@@ -10,7 +11,43 @@ fn main() {
     println!(
         "{}",
         best(&map, &paths, String::from("AA"), HashSet::new(), 30)
-    )
+    );
+
+    let mut all = vec![];
+
+    for (k, v) in map.iter() {
+        if v.rate > 0 {
+            all.push(k);
+        }
+    }
+
+    let combinations: Vec<Vec<_>> = all
+        .clone()
+        .into_iter()
+        .combinations(all.len() / 2)
+        .collect();
+
+    let mut max = 0;
+
+    for combination in combinations {
+        let mut set1 = HashSet::new();
+        let mut set2 = HashSet::new();
+
+        for k in all.clone() {
+            if combination.contains(&k) {
+                set1.insert(k.to_string());
+            } else {
+                set2.insert(k.to_string());
+            }
+        }
+
+        let max_iter = best(&map, &paths, String::from("AA"), set1, 26)
+            + best(&map, &paths, String::from("AA"), set2, 26);
+
+        max = max.max(max_iter);
+    }
+
+    println!("{}", max);
 }
 
 #[derive(Debug)]
@@ -94,8 +131,8 @@ fn best(
     let mut max: isize = 0;
 
     for to in paths[&current].keys() {
-        if !opened.contains(to) && time >= paths[&current][to] as isize {
-            let remaining: isize = time as isize - paths[&current][to] as isize - 1;
+        if !opened.contains(to) && time >= paths[&current][to] {
+            let remaining: isize = time - paths[&current][to] - 1;
 
             let pressure = valves[to].rate * remaining;
             let mut set = HashSet::from(opened.clone());
