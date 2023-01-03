@@ -18,3 +18,4 @@ My solutions to the [Advent of Code](https://adventofcode.com/2022/) 2022 in Rus
 [Day 14: Regolith Reservoir](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/14.rs)\
 [Day 15: Beacon Exclusion Zone](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/15.rs)\
 [Day 16: Proboscidea Volcanium](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/16.rs)
+[Day 17: Pyroclastic Flow](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/17.rs)
