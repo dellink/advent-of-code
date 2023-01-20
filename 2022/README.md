@@ -20,4 +20,5 @@ My solutions to the [Advent of Code 2022](https://adventofcode.com/2022/) in Rus
 [Day 16: Proboscidea Volcanium](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/16.rs)\
 [Day 17: Pyroclastic Flow](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/17.rs)\
 [Day 18: Boiling Boulders](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/18.rs)\
-[Day 19: Not Enough Minerals](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/19.rs)
+[Day 19: Not Enough Minerals](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/19.rs)\
+[Day 20: Grove Positioning System](https://github.com/dellink/advent-of-code/blob/main/2022/src/bin/20.rs)
